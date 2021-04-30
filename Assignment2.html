@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--- Assignment 2:
+	Style the HTML elements according to the following instructions. 
+	DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
+	
+	* Give the <th> element a background of steelblue and a font of white
+
+	* Give the active rows in the male table a background color of #a2662a
+
+  * Give the active rows in the female table a background color of seagreen
+
+  * Give the inactive rows in the female table a background color of mediumaquamarine
+
+  * Give the inactive rows in the male table a background color of peru
+
+--->
+<html>
+	<head>
+		<title> US-FDA Calorie Recommendations </title>
+    <style>
+      th {color:white;background-color:steelblue}
+      #female .inactive td {background-color:mediumaquamarine}
+      #female .active td{background-color:seagreen}
+      #male .inactive td {background-color:peru}
+      #male .active td {background-color:#a2662a}
+    </style>
+	</head>
+	<body>
+	    <h1>Recommended Daily Calorie Allowances</h1>
+	
+	    <!-- Females -->
+	    <h2>Females</h2>
+	    <table border="1" id="female">
+          <tr>
+            <th>Age</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+          </tr>
+          <tr class="inactive">
+            <th>Inactive</th>
+            <td>1,600</td>
+            <td>1,800</td>
+            <td>1,800</td>
+            <td>1,800</td>
+            <td>1,800</td>
+            <td>1,800</td>
+          </tr>
+          <tr class="active">
+            <th>Very Active</th>
+            <td>2,200</td>
+            <td>2,400</td>
+            <td>2,400</td>
+            <td>2,400</td>
+            <td>2,400</td>
+            <td>2,400</td>
+          </tr>
+        </table>
+	    <br>
+	    
+		<!-- Males -->
+	    <h2>Males</h2>
+	    <table border="1" id="male">
+          <tr>
+            <th>Age</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+          </tr>
+          <tr class="inactive">
+            <th>Inactive</th>
+            <td>2,000</td>
+            <td>2,000</td>
+            <td>2,200</td>
+            <td>2,400</td>
+            <td>2,400</td>
+            <td>2,400</td>
+          </tr>
+          <tr class="active">
+            <th>Very Active</th>
+            <td>2,600</td>
+            <td>2,800</td>
+            <td>3,000</td>
+            <td>3,200</td>
+            <td>3,200</td>
+            <td>3,200</td>
+          </tr>
+        </table>
+	</body>
+</html>
